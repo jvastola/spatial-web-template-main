@@ -33,8 +33,9 @@ export class InlineSystem extends System {
 			new MeshStandardMaterial({ side: BackSide, color: 0x2e2e2e }),
 		);
 		scene.add(this.container);
-		camera.position.set(0, 0.1, 0.4);
-		loader.load('assets/Prop_Camera.glb', (gltf) => {
+		camera.position.set(1, 0.1, 0.4);
+		loader.load('assets/car.glb', (gltf) => {
+			
 			const model = gltf.scene;
 			this.container.add(model);
 			model.name = 'mesh-prototype';
