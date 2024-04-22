@@ -34,7 +34,7 @@ export class InlineSystem extends System {
 		);
 		scene.add(this.container);
 		camera.position.set(1, 0.1, 0.4);
-		loader.load('assets/car.glb', (gltf) => {
+		loader.load('assets/Prop_Camera.glb', (gltf) => {
 			
 			const model = gltf.scene;
 			this.container.add(model);
